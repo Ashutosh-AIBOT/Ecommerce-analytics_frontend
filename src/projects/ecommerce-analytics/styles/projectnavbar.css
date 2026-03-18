@@ -1,0 +1,28 @@
+.project-navbar {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem 2rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 60px;
+  z-index: 99;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.pnav-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.pnav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

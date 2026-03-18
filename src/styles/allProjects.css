@@ -1,0 +1,269 @@
+/* AllProjects.css */
+
+.all-projects-page {
+    min-height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.projects-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+/* Horizontal Project Selector - 3-line buttons */
+.project-selector-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+
+.project-btn {
+    padding: 18px 20px;
+    border: 2px solid;
+    border-radius: 16px;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.3;
+}
+
+.project-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.2);
+}
+
+.project-btn.selected {
+    border-width: 2px;
+    font-weight: 600;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.case-number {
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.project-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Project Detail Section */
+.project-detail-section {
+    margin-top: 30px;
+}
+
+.info-block {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 25px;
+}
+
+.block-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.block-icon {
+    font-size: 1.5rem;
+}
+
+.block-header h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+}
+
+.block-content {
+    padding-left: 35px;
+}
+
+.block-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.8);
+    margin: 8px 0;
+}
+
+.block-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.dataset-link {
+    color: #60a5fa;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.dataset-link:hover {
+    text-decoration: underline;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background: rgba(255,255,255,0.1);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0 30px;
+    padding-left: 35px;
+}
+
+.github-action-btn {
+    padding: 14px 35px;
+    border: 2px solid;
+    border-radius: 35px;
+    background: transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.github-action-btn:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+.model-action-btn {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.model-action-btn:hover:not(.disabled) {
+    transform: translateY(-2px);
+    filter: brightness(110%);
+    box-shadow: 0 5px 20px rgba(255,255,255,0.2);
+}
+
+.model-action-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.project-navbar-wrapper {
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .project-btn {
+        min-width: 180px;
+        padding: 16px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-selector-horizontal {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .project-btn {
+        min-width: 160px;
+    }
+    
+    .case-number {
+        font-size: 0.8rem;
+    }
+    
+    .project-number {
+        font-size: 1rem;
+    }
+    
+    .project-name {
+        font-size: 0.85rem;
+    }
+    
+    .block-content {
+        padding-left: 0;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 15px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+/* Scrollbar styling */
+.project-selector-horizontal::-webkit-scrollbar {
+    height: 5px;
+}
+
+.project-selector-horizontal::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.project-selector-horizontal::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.project-selector-horizontal::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}

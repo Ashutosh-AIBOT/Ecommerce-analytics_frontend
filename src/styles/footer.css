@@ -1,0 +1,22 @@
+.footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-name {
+  color: var(--accent);
+}
+
+.footer-quote {
+  color: var(--border);
+  font-size: 0.8rem;
+  font-style: italic;
+}

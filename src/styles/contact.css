@@ -1,0 +1,18 @@
+.contact {
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}

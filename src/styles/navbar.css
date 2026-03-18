@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.navbar-links a:hover {
+  color: var(--text-primary);
+}
+
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme-switcher button {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.theme-switcher button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-scroll-btn {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+}
+
+.nav-scroll-btn:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.nav-link-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-link-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.navbar-logo {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.theme-btn {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-btn.active {
+    border-color: white;
+    font-weight: bold;
+    transform: scale(1.05);
+}
